@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "443790476675",
+    "firebase_url": "https://tadsmessagetest.firebaseio.com",
+    "project_id": "tadsmessagetest",
+    "storage_bucket": "tadsmessagetest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443790476675:android:b1fea310517e67e0",
+        "android_client_info": {
+          "package_name": "com.example.hudson.tadszap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443790476675-aft0hgd1l80kivpdj8bf8581874fekb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hudson.tadszap",
+            "certificate_hash": "33d16050816765ae0bce50116fae53ded716d4e9"
+          }
+        },
+        {
+          "client_id": "443790476675-e900tidi7sun0i96chlp5ft5i4cl3rba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hudson.tadszap",
+            "certificate_hash": "9b04a4ce3d0604607a92b9e8f3bc0d2a4052b4a1"
+          }
+        },
+        {
+          "client_id": "443790476675-jkntvumethcc45hm7run8bbcn5gg78kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV7GYhs29bOVtHRn3v4ErNZ5XBP5fdHt8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443790476675-jkntvumethcc45hm7run8bbcn5gg78kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

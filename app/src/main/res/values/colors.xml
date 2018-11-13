@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="cardColor">#F0f5FA</color>
+
+    <color name="facebook">#0000FF</color>
+    <color name="twitter">#1E90FF</color>
+    <color name="google">#FF0000</color>
+    <color name="anonimo">#708090</color>
+    <color name="text">#FFFAFA</color>
+</resources>

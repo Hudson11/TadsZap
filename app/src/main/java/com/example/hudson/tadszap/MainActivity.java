@@ -1,5 +1,6 @@
 package com.example.hudson.tadszap;
 
+import android.Manifest;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -16,6 +17,11 @@ import com.firebase.ui.auth.AuthUI;
 public class MainActivity extends AppCompatActivity {
 
     static String ANONIMO;
+
+    private static final String[] permissions = {
+        Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_FINE_LOCATION};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

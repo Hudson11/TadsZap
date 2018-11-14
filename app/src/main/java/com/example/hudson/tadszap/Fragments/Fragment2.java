@@ -161,7 +161,7 @@ public class Fragment2 extends Fragment {
         /*
         *   Controla o fluxo de telas de login do fragment3.
         * */
-        /*authStateListener = new FirebaseAuth.AuthStateListener(){
+        authStateListener = new FirebaseAuth.AuthStateListener(){
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
 
@@ -187,7 +187,7 @@ public class Fragment2 extends Fragment {
                             CODIGO_LOGAR);
                 }
             }
-        };*/
+        };
 
         return v;
     }
@@ -195,17 +195,17 @@ public class Fragment2 extends Fragment {
     @Override
     public void onResume(){
         super.onResume();
-        /*mFirebaseAuth.addAuthStateListener(authStateListener);*/
+        mFirebaseAuth.addAuthStateListener(authStateListener);
     }
 
     @Override
     public void onPause(){
         super.onPause();
-       /* if(authStateListener != null){
+        if(authStateListener != null){
             mFirebaseAuth.removeAuthStateListener(authStateListener);
         }
         detachDatabaseReadListener();
-        listaMensagem.clear();*/
+        listaMensagem.clear();
     }
 
     public void onSignInInitialize(String userName){
@@ -296,6 +296,4 @@ public class Fragment2 extends Fragment {
             });
         }
     }
-
-
 }

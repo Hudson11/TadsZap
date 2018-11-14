@@ -31,6 +31,22 @@
           }
         },
         {
+          "client_id": "443790476675-3p081bjh9funhiltu7dot7o6n4os49pr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hudson.tadszap",
+            "certificate_hash": "efebf09fecaa4e8c331698cb4432d33163b81700"
+          }
+        },
+        {
+          "client_id": "443790476675-8f7lgo3n2sppe5ai68ssvn0u2jokn99u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hudson.tadszap",
+            "certificate_hash": "dfacdeec705e3046665e9e108c239534e279d506"
+          }
+        },
+        {
           "client_id": "443790476675-jkntvumethcc45hm7run8bbcn5gg78kq.apps.googleusercontent.com",
           "client_type": 3
         }

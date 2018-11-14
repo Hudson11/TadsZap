@@ -60,12 +60,15 @@ public class Fragment1 extends Fragment {
         mFirebase = FirebaseDatabase.getInstance();
         mReference = mFirebase.getReference();
 
+
         mPhotoView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent  takePictureIntent =  new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                if  (takePictureIntent.resolveActivity(getActivity().getPackageManager())  !=  null)  {
-                    startActivityForResult(takePictureIntent,  REQUEST_IMAGE_CAPTURE);
+                if(getPermissionCamera()) {
+                    Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
+                        startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+                    }
                 }
             }
         });
@@ -76,7 +79,7 @@ public class Fragment1 extends Fragment {
         return v;
     }
 
-    private void getPermissions() {
+    /*private void getPermissions() {
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED
                 || ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
                 || ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
@@ -85,6 +88,12 @@ public class Fragment1 extends Fragment {
         }
         else
             return;
+    }*/
+
+    private boolean getPermissionCamera(){
+        if(ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED)
+                return  true;
+        return false;
     }
 
     @Override

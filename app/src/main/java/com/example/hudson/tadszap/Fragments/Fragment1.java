@@ -63,11 +63,10 @@ public class Fragment1 extends Fragment {
         mPhotoView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getPermissions();
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                intent.setType("image/jpeg");
-                intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
-                startActivityForResult(Intent.createChooser(intent, "complete action using"), REQUEST_IMAGE_CAPTURE);
+                Intent  takePictureIntent =  new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                if  (takePictureIntent.resolveActivity(getActivity().getPackageManager())  !=  null)  {
+                    startActivityForResult(takePictureIntent,  REQUEST_IMAGE_CAPTURE);
+                }
             }
         });
 
